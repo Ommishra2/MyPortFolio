@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 export const portfolioData = {
   name: 'Om Prakash Mishra',
@@ -69,7 +69,7 @@ export const portfolioData = {
     { name: 'REST APIs', proficiency: 90 },
   ],
   contact: {
-    email: 'om.mishra@example.com',
+    email: 'ommishra458@gmail.com',
   },
   socials: [
     {
@@ -86,6 +86,11 @@ export const portfolioData = {
       name: 'Twitter',
       url: '#',
       icon: Twitter,
+    },
+     {
+      name: 'Instagram',
+      url: '#',
+      icon: Instagram,
     },
   ],
 };
