@@ -1,76 +1,75 @@
 import { Github, Linkedin, Twitter } from 'lucide-react';
-import type { Project as ProjectType } from '@/components/project-card';
 
 export const portfolioData = {
-  name: 'Alex Doe',
-  title: 'Python & Flask Developer',
+  name: 'Om Prakash Mishra',
+  title: 'Full Stack Developer & Data Analytics Specialist',
   about:
-    "I'm a passionate developer with a knack for creating elegant solutions with Python and Flask. With a background in web development and data science, I enjoy building scalable web applications and working on challenging problems. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.",
+    "I'm a dedicated Full Stack Developer with a specialization in Data Analytics. I have a passion for building dynamic web applications and extracting meaningful insights from data. I thrive on solving complex problems and am constantly exploring new technologies to enhance my skills and deliver innovative solutions.",
   projects: [
     {
-      name: 'E-commerce Analytics Dashboard',
+      name: 'Interactive Data Visualization Platform',
       description:
-        'A comprehensive analytics dashboard for an e-commerce platform, providing insights into sales, customer behavior, and product performance. Built with Flask, Plotly, and Pandas, this tool helps businesses make data-driven decisions by visualizing key metrics in an interactive and user-friendly interface.',
+        'A web platform for creating and sharing interactive data visualizations. Users can upload datasets, generate various chart types, and customize dashboards. Built with a React frontend, Node.js backend, and D3.js for powerful data rendering. The platform helps users to discover and present data stories effectively.',
       images: [
         'https://placehold.co/600x400.png',
         'https://placehold.co/600x400.png',
         'https://placehold.co/600x400.png',
       ],
-      skills: ['Python', 'Flask', 'Plotly', 'Pandas', 'JavaScript', 'SQL'],
+      skills: ['React', 'Node.js', 'Express', 'MongoDB', 'D3.js', 'Python'],
       demoUrl: '#',
       sourceUrl: '#',
-      dataAiHint: 'dashboard charts'
+      dataAiHint: 'analytics dashboard'
     },
     {
-      name: 'Task Management API',
+      name: 'E-commerce Recommendation Engine',
       description:
-        'A robust RESTful API for a task management application, featuring secure user authentication, task creation, updates, and status tracking. Developed using Flask-RESTX and SQLAlchemy, it provides a scalable backend for any modern to-do list or project management tool.',
+        'A machine learning-powered recommendation engine for an e-commerce site. By analyzing user behavior and purchase history, it provides personalized product suggestions. This was developed using Python with Pandas and Scikit-learn, and integrated into a web app via a Flask API.',
       images: [
         'https://placehold.co/600x400.png',
         'https://placehold.co/600x400.png',
       ],
-      skills: ['Python', 'Flask', 'Flask-RESTX', 'SQLAlchemy', 'PostgreSQL', 'Docker'],
+      skills: ['Python', 'Pandas', 'Scikit-learn', 'Flask', 'REST API', 'SQL'],
       demoUrl: '#',
       sourceUrl: '#',
-      dataAiHint: 'code api'
+      dataAiHint: 'online shopping'
     },
     {
-      name: 'Personal Blog Platform',
+      name: 'Full-Stack MERN Blog',
       description:
-        'A fully-functional blogging platform that allows users to create, edit, and publish articles with a rich text editor. It includes features like user accounts, comment sections, and content management. Built from the ground up with Flask and a relational database.',
+        'A feature-rich blogging platform built with the MERN stack (MongoDB, Express, React, Node.js). It includes secure user authentication with JWT, a rich text editor for creating posts, and a responsive design for a seamless experience across all devices.',
       images: [
         'https://placehold.co/600x400.png',
       ],
-      skills: ['Python', 'Flask', 'SQLAlchemy', 'JavaScript', 'HTML/CSS', 'Authentication'],
+      skills: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Redux'],
       demoUrl: '#',
       sourceUrl: '#',
-      dataAiHint: 'writing blog'
+      dataAiHint: 'tech blog'
     },
      {
-      name: 'AI-Powered Chatbot',
+      name: 'Sentiment Analysis API',
       description:
-        'An intelligent chatbot for customer support, leveraging natural language processing (NLP) to understand and respond to user queries in real-time. This project is integrated with a Flask backend and can be connected to various messaging platforms to provide instant assistance.',
+        'A RESTful API that performs sentiment analysis on a given text. It leverages Natural Language Processing (NLP) techniques to determine if the sentiment is positive, negative, or neutral. The API is built with Flask and the NLTK library, and containerized with Docker for easy deployment.',
       images: [
         'https://placehold.co/600x400.png',
       ],
-      skills: ['Python', 'Flask', 'NLTK', 'TensorFlow', 'React', 'Web Sockets'],
+      skills: ['Python', 'Flask', 'NLTK', 'Docker', 'REST API', 'NLP'],
       demoUrl: '#',
       sourceUrl: '#',
-      dataAiHint: 'robot chat'
+      dataAiHint: 'data analytics'
     },
   ],
   skills: [
+    { name: 'JavaScript', proficiency: 90 },
+    { name: 'React', proficiency: 85 },
+    { name: 'Node.js', proficiency: 80 },
     { name: 'Python', proficiency: 95 },
-    { name: 'Flask', proficiency: 90 },
-    { name: 'SQLAlchemy', proficiency: 85 },
-    { name: 'JavaScript', proficiency: 80 },
-    { name: 'React', proficiency: 75 },
-    { name: 'Docker', proficiency: 70 },
-    { name: 'PostgreSQL', proficiency: 85 },
-    { name: 'API Design', proficiency: 90 },
+    { name: 'Pandas & NumPy', proficiency: 90 },
+    { name: 'SQL & NoSQL', proficiency: 88 },
+    { name: 'Flask', proficiency: 80 },
+    { name: 'REST APIs', proficiency: 90 },
   ],
   contact: {
-    email: 'alex.doe@example.com',
+    email: 'om.mishra@example.com',
   },
   socials: [
     {

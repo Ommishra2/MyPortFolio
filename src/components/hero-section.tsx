@@ -1,37 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/lib/portfolio-data";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Sparkles } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section id="home" className="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
-       <div className="absolute inset-0 bg-background/50 backdrop-blur-sm z-10" />
-       <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Abstract background"
-          data-ai-hint="abstract background"
-          fill={true}
-          style={{ objectFit: 'cover' }}
-          className="z-0"
-          priority
-        />
+    <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
+       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
         <div className="grid gap-6">
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline">
+             <div className="inline-block rounded-full bg-secondary text-secondary-foreground px-4 py-1 text-sm">
+                Full Stack Developer & Data Analyst
+              </div>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">
               {portfolioData.name}
             </h1>
-            <p className="text-xl md:text-2xl text-primary font-medium">
-              {portfolioData.title}
-            </p>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
-              Welcome to my digital space. I build elegant and efficient web solutions.
+              Welcome to my digital portfolio. I craft intelligent and efficient web solutions.
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row justify-center items-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground">
               <Link href="#contact">Get in Touch</Link>
             </Button>
             <Button asChild variant="outline" size="lg">

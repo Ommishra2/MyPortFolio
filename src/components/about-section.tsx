@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { Wand2, Loader2, Lightbulb } from "lucide-react";
+import { Wand2, Loader2, Lightbulb, GraduationCap } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export function AboutSection() {
@@ -35,17 +35,26 @@ export function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-background">
+    <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">About Me</h2>
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <p className="text-primary font-semibold">About Me</p>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Who I Am</h2>
+            </div>
             <p className="text-foreground/80 leading-relaxed text-lg">
               {portfolioData.about}
             </p>
+            <div className="flex items-start gap-4 text-foreground/80">
+                <GraduationCap className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                <p>
+                  Currently pursuing a Master of Science in Information Technology at Babasaheb Bhimrao Ambedkar University, Lucknow.
+                </p>
+            </div>
           </div>
           
-          <Card className="shadow-lg">
+          <Card className="shadow-lg bg-card/50 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Wand2 className="text-primary" />
@@ -63,13 +72,13 @@ export function AboutSection() {
                     id="jobDescription"
                     name="jobDescription"
                     placeholder="Paste a job description here to tailor the summary..."
-                    className="mt-1"
+                    className="mt-1 bg-background/50"
                   />
                 </div>
                 <div>
                   <Label htmlFor="tone">Tone</Label>
                    <Select name="tone" value={tone} onValueChange={setTone}>
-                    <SelectTrigger id="tone" className="w-full mt-1">
+                    <SelectTrigger id="tone" className="w-full mt-1 bg-background/50">
                       <SelectValue placeholder="Select a tone" />
                     </SelectTrigger>
                     <SelectContent>
@@ -80,7 +89,7 @@ export function AboutSection() {
                     </SelectContent>
                   </Select>
                 </div>
-                <Button type="submit" disabled={isLoading} className="w-full">
+                <Button type="submit" disabled={isLoading} className="w-full bg-primary/90 hover:bg-primary text-primary-foreground">
                   {isLoading ? (
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   ) : (
@@ -101,7 +110,7 @@ export function AboutSection() {
                 <Alert className="mt-4 border-primary/50">
                   <Lightbulb className="h-4 w-4 text-primary" />
                   <AlertTitle className="text-primary">Generated Summary</AlertTitle>
-                  <AlertDescription>
+                  <AlertDescription className="prose prose-sm prose-invert">
                     {summary}
                   </AlertDescription>
                 </Alert>
