@@ -7,9 +7,9 @@ export const portfolioData = {
     "I'm a dedicated Full Stack Developer with a specialization in Data Analytics. I have a passion for building dynamic web applications and extracting meaningful insights from data. I thrive on solving complex problems and am constantly exploring new technologies to enhance my skills and deliver innovative solutions.",
   projects: [
     {
-      name: 'Interactive Data Visualization Platform',
+      name: 'MealEase',
       description:
-        'A web platform for creating and sharing interactive data visualizations. Users can upload datasets, generate various chart types, and customize dashboards. Built with a React frontend, Node.js backend, and D3.js for powerful data rendering. The platform helps users to discover and present data stories effectively.',
+        ' a web app I built to help people plan their meals, find new recipes, and keep track of nutrition in an easy way.',
       images: [
         'https://placehold.co/600x400.png',
         'https://placehold.co/600x400.png',

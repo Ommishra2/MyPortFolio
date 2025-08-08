@@ -17,9 +17,6 @@ const navLinks = [
 
 const welcomeMessages = [
   "Welcome to my Portfolio!",
-  "Om Prakash Mishra",
-  "Full Stack Developer",
-  "Data Analytics Specialist",
 ];
 
 function DynamicWelcomeNote() {
