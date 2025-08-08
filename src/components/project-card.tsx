@@ -33,16 +33,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <Card className="h-full overflow-hidden transition-all duration-300 bg-card/50 hover:bg-card/70 backdrop-blur-sm group flex flex-col md:flex-row md:items-center gap-6 p-6">
         <div className="relative w-full md:w-1/2 aspect-video overflow-hidden rounded-lg">
           <ProjectDialog project={project}>
-            <Image
-              src={project.images[0]}
-              alt={project.name}
-              data-ai-hint={project.dataAiHint}
-              fill={true}
-              style={{ objectFit: "cover" }}
-              className="transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <p className="text-white font-semibold">View Details</p>
+            <div className="relative w-full h-full cursor-pointer">
+              <Image
+                src={project.images[0]}
+                alt={project.name}
+                data-ai-hint={project.dataAiHint}
+                fill={true}
+                style={{ objectFit: "cover" }}
+                className="transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <p className="text-white font-semibold">View Details</p>
+              </div>
             </div>
           </ProjectDialog>
         </div>
