@@ -14,7 +14,7 @@ const JSIcon = () => (
 );
 
 const ReactIcon = () => (
-  <svg viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-primary">
+  <svg viewBox="-10.5 -9.45 21 18.9" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#61DAFB]">
     <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
     <g stroke="currentColor" strokeWidth="1" fill="none">
         <ellipse rx="10" ry="4.5"></ellipse>
@@ -25,17 +25,44 @@ const ReactIcon = () => (
 );
 
 const NodeIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#68a063]">
-    <path d="M11.74,21.82,2,16.43V5.57L11.74.18l9.74,5.39V16.43ZM3.58,15.55l8.16,4.71,8.16-4.71V6.45L11.74,1.74,3.58,6.45Zm5.53-1.42,1.3,2.26,3.61-2.09-.33-4.59-1.3-2.26-3.61,2.09.33,4.59Z" fill="currentColor"/>
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-[#339933]">
+    <path d="M11.97 22.24C6.34 22.24 1.76 17.63 1.76 12S6.37 1.76 12 1.76c5.66 0 10.24 4.61 10.24 10.24S17.63 22.24 11.97 22.24zM12 3.27c-4.83 0-8.75 3.92-8.75 8.73 0 4.81 3.92 8.73 8.75 8.73s8.75-3.92 8.75-8.73C20.75 7.19 16.83 3.27 12 3.27z" fill="currentColor"/>
+    <path d="M11.39 15.1l-4.2-2.36V8.11l4.2 2.36v4.63zm.03-1.12V9.81L7.8 7.82v4.19l3.62 2.05z" fill="currentColor"/>
+    <path d="M12.61 15.1V10.47l4.2-2.36v4.63l-4.2 2.36zm.03-5.75L12.01 9.8l.62-.35 3.61-2.05v.01l.03-.02.59-.34v4.21l-4.24 2.38.03-1.12z" fill="currentColor"/>
+    <path d="M11.99 9.07l-4.2-2.36 4.2-2.35 4.2 2.35-4.2 2.36zm0-1.12l3.6-2.04-3.6-2.04-3.6 2.04 3.6 2.04z" fill="currentColor"/>
   </svg>
 );
 
 const PythonIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10">
-    <path fill="#3776AB" d="M12,2A10,10,0,0,0,2,12a10,10,0,0,0,10,10,10,10,0,0,0,10-10A10,10,0,0,0,12,2Zm5,13.5a2,2,0,0,1-2,2H9.5a2.5,2.5,0,0,1-2.5-2.5v-5A2.5,2.5,0,0,1,9.5,8H12a2,2,0,0,1,2,2v1.5H11.5a1,1,0,0,0-1,1v1a1,1,0,0,0,1,1h3a2,2,0,0,1,2,2Z"/>
-    <path fill="#FFD43B" d="M12,22A10,10,0,0,1,2,12,10,10,0,0,1,12,2,10,10,0,0,1,22,12,10,10,0,0,1,12,22ZM7,8.5A2,2,0,0,0,9,6.5h2.5a2.5,2.5,0,0,1,2.5,2.5v5a2.5,2.5,0,0,1-2.5,2.5H12a2,2,0,0,1-2-2V13h2.5a1,1,0,0,0,1-1V11a1,1,0,0,0-1-1H9a2,2,0,0,1-2-2Z"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16H9.5c-1.38 0-2.5-1.12-2.5-2.5v-5C7 9.12 8.12 8 9.5 8H11v2H9.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H11v2zm5-5h-2.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5H16v2h-1.5c-.28 0-.5.22-.5.5v1c0 .28.22.5.5.5H16v2zm-2.5-7.5c-1.38 0-2.5 1.12-2.5 2.5V8h2v-.5c0-.28.22-.5.5-.5h5c.28 0 .5.22.5.5V8h2v-.5c0-1.38-1.12-2.5-2.5-2.5h-5z" fill="#3776AB"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 10.5c0 1.38-1.12 2.5-2.5 2.5H12v-2h2.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5H12v-2h2.5c1.38 0 2.5 1.12 2.5 2.5v1zM7 14.5c0 1.38 1.12 2.5 2.5 2.5h5c1.38 0 2.5-1.12 2.5-2.5V14h-2v.5c0 .28-.22.5-.5.5h-5c-.28 0-.5-.22-.5-.5V14H7v.5z" fill="#FFD43B"/>
   </svg>
 );
+
+const MERNIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" className="h-10 w-16">
+    <g fill="#000000" fontFamily="monospace" fontSize="12">
+      <text x="5" y="15" fill="#4DB33D">M</text>
+      <text x="25" y="15" fill="#000000">E</text>
+      <text x="45" y="15" fill="#61DAFB">R</text>
+      <text x="65" y="15" fill="#339933">N</text>
+    </g>
+    <g fill="#000000" fontFamily="monospace" fontSize="8">
+      <text x="0" y="30">MongoDB</text>
+      <text x="0" y="40">Express</text>
+      <text x="50" y="30">React</text>
+      <text x="50" y="40">Node.js</text>
+    </g>
+  </svg>
+);
+
+const TableauIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E87627" className="h-10 w-10">
+    <path d="M2 12h5v10H2zM9 2h5v20H9zM16 7h5v15h-5z"/>
+  </svg>
+);
+
 
 export function AboutSection() {
   const technologies = [
@@ -43,6 +70,8 @@ export function AboutSection() {
     { name: 'React', icon: ReactIcon },
     { name: 'Node.js', icon: NodeIcon },
     { name: 'Python', icon: PythonIcon },
+    { name: 'MERN Stack', icon: MERNIcon },
+    { name: 'Tableau', icon: TableauIcon },
   ];
 
   return (
