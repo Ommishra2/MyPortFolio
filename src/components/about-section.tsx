@@ -40,23 +40,6 @@ const PythonIcon = () => (
   </svg>
 );
 
-const MERNIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 60" className="h-10 w-16">
-    <g fill="#000000" fontFamily="monospace" fontSize="12">
-      <text x="5" y="15" fill="#4DB33D">M</text>
-      <text x="25" y="15" fill="#000000">E</text>
-      <text x="45" y="15" fill="#61DAFB">R</text>
-      <text x="65" y="15" fill="#339933">N</text>
-    </g>
-    <g fill="#000000" fontFamily="monospace" fontSize="8">
-      <text x="0" y="30">MongoDB</text>
-      <text x="0" y="40">Express</text>
-      <text x="50" y="30">React</text>
-      <text x="50" y="40">Node.js</text>
-    </g>
-  </svg>
-);
-
 const TableauIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E87627" className="h-10 w-10">
     <path d="M2 12h5v10H2zM9 2h5v20H9zM16 7h5v15h-5z"/>
@@ -70,7 +53,6 @@ export function AboutSection() {
     { name: 'React', icon: ReactIcon },
     { name: 'Node.js', icon: NodeIcon },
     { name: 'Python', icon: PythonIcon },
-    { name: 'MERN Stack', icon: MERNIcon },
     { name: 'Tableau', icon: TableauIcon },
   ];
 
