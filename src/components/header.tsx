@@ -15,6 +15,50 @@ const navLinks = [
   { href: '#contact', label: 'Contact' },
 ];
 
+const welcomeMessages = [
+  "Welcome to my Portfolio!",
+  "Om Prakash Mishra",
+  "Full Stack Developer",
+  "Data Analytics Specialist",
+];
+
+function DynamicWelcomeNote() {
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 75 : 150;
+    const currentMessage = welcomeMessages[index];
+
+    const handleTyping = () => {
+      if (isDeleting) {
+        setText((prev) => prev.substring(0, prev.length - 1));
+      } else {
+        setText((prev) => currentMessage.substring(0, prev.length + 1));
+      }
+
+      if (!isDeleting && text === currentMessage) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setIndex((prev) => (prev + 1) % welcomeMessages.length);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, index]);
+
+  return (
+    <span className='w-full'>
+      {text}
+      <span className="animate-ping">|</span>
+    </span>
+  );
+}
+
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -35,7 +79,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <Code className="h-6 w-6 text-primary" />
-          <span>{portfolioData.name}</span>
+          <DynamicWelcomeNote />
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
