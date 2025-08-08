@@ -37,7 +37,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <div className="space-y-2">
               <p className="text-primary font-semibold">About Me</p>
@@ -46,32 +46,37 @@ export function AboutSection() {
             <p className="text-foreground/80 leading-relaxed text-lg">
               {portfolioData.about}
             </p>
-            <div className="flex items-start gap-4 text-foreground/80">
-                <GraduationCap className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <p>
-                  Currently pursuing a Master of Science in Information Technology at Babasaheb Bhimrao Ambedkar University, Lucknow.
-                </p>
-            </div>
           </div>
           
           <Card className="shadow-lg bg-card/50 backdrop-blur-sm">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Wand2 className="text-primary" />
-                <span>AI-Powered Summary</span>
+                <GraduationCap className="text-primary" />
+                <span>Education & Aspirations</span>
               </CardTitle>
               <CardDescription>
-                Generate a custom portfolio summary tailored to a specific job or tone.
+                I am currently pursuing my Master's degree and am passionate about applying my skills to real-world challenges. You can generate a summary of my profile below.
               </CardDescription>
             </CardHeader>
             <CardContent>
+              <div className="space-y-4 mb-6">
+                 <div className="flex items-start gap-4 text-foreground/80">
+                    <GraduationCap className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-semibold text-foreground">Master of Science in Information Technology</h3>
+                      <p className="text-sm">Babasaheb Bhimrao Ambedkar University, Lucknow</p>
+                      <p className="text-sm text-muted-foreground">Currently Pursuing</p>
+                    </div>
+                </div>
+              </div>
+
               <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Label htmlFor="jobDescription">Job Description (Optional)</Label>
+                 <div>
+                  <Label htmlFor="jobDescription">Tailor My Summary (Optional)</Label>
                   <Textarea
                     id="jobDescription"
                     name="jobDescription"
-                    placeholder="Paste a job description here to tailor the summary..."
+                    placeholder="Paste a job description here to see how my skills align..."
                     className="mt-1 bg-background/50"
                   />
                 </div>
@@ -95,7 +100,7 @@ export function AboutSection() {
                   ) : (
                     <Wand2 className="mr-2 h-4 w-4" />
                   )}
-                  Generate Summary
+                  Generate AI Summary
                 </Button>
               </form>
               
