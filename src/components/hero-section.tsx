@@ -53,7 +53,7 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
           >
              <div className="inline-block rounded-full bg-secondary text-secondary-foreground px-4 py-1 text-sm">
-                Full Stack Developer & Data Analyst
+                Full Stack Developer & Data Analyst in making !
               </div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">
               {portfolioData.name}

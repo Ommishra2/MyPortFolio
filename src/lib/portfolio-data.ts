@@ -11,9 +11,10 @@ export const portfolioData = {
       description:
         ' a web app I built to help people plan their meals, find new recipes, and keep track of nutrition in an easy way.',
       images: [
-        'https://placehold.co/600x400.png',
-        'https://placehold.co/600x400.png',
-        'https://placehold.co/600x400.png',
+        '/images/mealease-1.png',
+        '/images/mealease-2.png',
+        '/images/mealease-3.png',
+        '/images/mealease-4.png',
       ],
       skills: ['React', 'Node.js', 'Express', 'MongoDB', 'D3.js', 'Python'],
       demoUrl: '#',
