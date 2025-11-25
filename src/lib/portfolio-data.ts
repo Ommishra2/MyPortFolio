@@ -4,7 +4,7 @@ export const portfolioData = {
   name: 'Om Prakash Mishra',
   title: 'Full Stack Developer & Data Analytics Specialist',
   about:
-    "I'm a dedicated Full Stack Developer with a specialization in Data Analytics. I have a passion for building dynamic web applications and extracting meaningful insights from data. I thrive on solving complex problems and am constantly exploring new technologies to enhance my skills and deliver innovative solutions.",
+    "I’m a passionate Full Stack Developer in training with a growing expertise in Data Analytics. As a student, I enjoy building dynamic, user-friendly web applications and discovering meaningful patterns in data. I’m always learning, experimenting, and refining my craft to deliver impactful solutions..",
   projects: [
     {
       name: 'MealEase',
@@ -16,9 +16,9 @@ export const portfolioData = {
         '/images/mealease-3.png',
         '/images/mealease-4.png',
       ],
-      skills: ['React', 'Node.js', 'Express', 'MongoDB', 'D3.js', 'Python'],
-      demoUrl: '#',
-      sourceUrl: '#',
+      skills: ['React', 'Node.js', 'Express','ES6+'],
+      demoUrl: 'https://meal-ease.vercel.app/',
+      sourceUrl: 'https://github.com/Ommishra2/MealEase',
       dataAiHint: 'analytics dashboard'
     },
     {
@@ -75,22 +75,22 @@ export const portfolioData = {
   socials: [
     {
       name: 'GitHub',
-      url: '#',
+      url: 'https://github.com/Ommishra2',
       icon: Github,
     },
     {
       name: 'LinkedIn',
-      url: '#',
+      url: 'https://www.linkedin.com/in/om-prakash-mishra-b20766201',
       icon: Linkedin,
     },
     {
       name: 'Twitter',
-      url: '#',
+      url: 'https://x.com/OMPRAKASHM74960',
       icon: Twitter,
     },
      {
       name: 'Instagram',
-      url: '#',
+      url: 'https://www.instagram.com/om.1205_?igsh=MWplN3lhYno5cWJ2MQ==',
       icon: Instagram,
     },
   ],
