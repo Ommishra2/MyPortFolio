@@ -21,7 +21,7 @@ export const portfolioData = {
       sourceUrl: 'https://github.com/Ommishra2/MealEase',
       dataAiHint: 'analytics dashboard'
     },
-     
+  ],
   skills: [
     { name: 'JavaScript', proficiency: 90 },
     { name: 'React', proficiency: 85 },
