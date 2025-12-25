@@ -8,6 +8,7 @@ import { Footer } from '@/components/footer';
 import { GridPattern } from '@/components/grid-pattern';
 import { cn } from '@/lib/utils';
 import { CurrentFocusSection } from '@/components/current-focus-section';
+import { LearningSection } from '@/components/learning-section';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <AboutSection />
           <ProjectsSection />
           <CurrentFocusSection />
+          <LearningSection />
           <SkillsSection />
           <ContactSection />
         </main>
