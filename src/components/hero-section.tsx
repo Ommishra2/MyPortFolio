@@ -5,20 +5,14 @@ import { Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { LiquidEffectAnimation } from "./ui/liquid-effect-animation";
 
 export function HeroSection() {
   const githubSocial = portfolioData.socials.find(s => s.name === 'GitHub');
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
-      <Image
-        src="https://picsum.photos/seed/space/1920/1080"
-        alt="A beautiful nebula in deep space"
-        fill
-        className="object-cover"
-        priority
-        data-ai-hint="nebula galaxy"
-      />
+      <LiquidEffectAnimation />
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
         <div className="grid gap-6">
