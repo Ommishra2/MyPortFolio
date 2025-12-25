@@ -7,6 +7,7 @@ import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 import { CurrentFocusSection } from '@/components/current-focus-section';
 import { LearningSection } from '@/components/learning-section';
+import { EducationSection } from '@/components/education-section';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <main className="flex-grow">
           <HeroSection />
           <AboutSection />
+          <EducationSection />
           <ProjectsSection />
           <CurrentFocusSection />
           <LearningSection />

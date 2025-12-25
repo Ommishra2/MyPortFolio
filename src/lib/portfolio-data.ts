@@ -5,6 +5,26 @@ export const portfolioData = {
   title: 'Full Stack Developer & Data Analytics Specialist',
   about:
     "I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies. My current work focuses on: Frontend development with Next.js, React, Tailwind CSS, Backend APIs using FastAPI and PostgreSQL, Data-driven dashboards and analytics, and Preparing for applied Machine Learning and AI systems. I believe in learning by building real products, not just completing courses.",
+  education: [
+    {
+      degree: 'Master of Computer Applications (MCA)',
+      institution: 'KIET Group of Institutions, Delhi-NCR, Ghaziabad',
+      period: '2023 – 2025',
+      details: [
+        'Specializing in advanced computer science topics, including algorithms, data structures, and software engineering.',
+        'CGPA: 9.2 (up to 2nd Semester)',
+      ],
+    },
+    {
+      degree: 'Bachelor of Science in Computer Science',
+      institution: 'University of Allahabad, Prayagraj, Uttar Pradesh',
+      period: '2020 – 2023',
+      details: [
+        'Built a strong foundation in core computer science principles.',
+        'Percentage: 72.4%',
+      ],
+    },
+  ],
   projects: [
     {
       name: 'FinDash — Financial Analytics Dashboard',
@@ -98,3 +118,4 @@ export type PortfolioData = typeof portfolioData;
 export type Project = typeof portfolioData.projects[0];
 export type Skills = typeof portfolioData.skills;
 export type Social = typeof portfolioData.socials[0];
+export type Education = typeof portfolioData.education[0];

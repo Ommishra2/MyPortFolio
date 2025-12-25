@@ -10,6 +10,7 @@ import { portfolioData } from '@/lib/portfolio-data';
 
 const navLinks = [
   { href: '#about', label: 'About' },
+  { href: '#education', label: 'Education' },
   { href: '#projects', label: 'Projects' },
   { href: '#learning', label: 'Learning' },
   { href: '#skills', label: 'Skills' },
