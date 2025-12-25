@@ -4,15 +4,13 @@ import { portfolioData } from "@/lib/portfolio-data";
 import { Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { LiquidEffectAnimation } from "./ui/liquid-effect-animation";
 
 export function HeroSection() {
   const githubSocial = portfolioData.socials.find(s => s.name === 'GitHub');
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
-       <LiquidEffectAnimation />
-       <div className="absolute inset-0 bg-background/60 z-10" />
+       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
         <div className="grid gap-6">
           <motion.div 
