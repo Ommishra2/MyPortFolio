@@ -62,9 +62,10 @@ export const portfolioData = {
     { name: 'Pandas (Basic)', proficiency: 60, category: 'Data & Visualization' },
     { name: 'Matplotlib, Seaborn', proficiency: 65, category: 'Data & Visualization' },
     { name: 'Git & GitHub', proficiency: 85, category: 'Tools & Workflow' },
-    { name: 'VS Code', proficiency: 90, category: 'Tools & Workflow' },
     { name: 'pnpm', proficiency: 70, category: 'Tools & Workflow' },
     { name: 'Figma (AI-assisted UI design)', proficiency: 75, category: 'Tools & Workflow' },
+    { name: 'DevOps', proficiency: 65, category: 'Tools & Workflow' },
+    { name: 'DevSecOps', proficiency: 60, category: 'Tools & Workflow' },
   ],
   contact: {
     email: 'ommishra458@gmail.com',
