@@ -23,7 +23,7 @@ const learningTopics = [
 
 export function LearningSection() {
   return (
-    <section id="learning" className="py-16 md:py-24">
+    <section id="learning" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <p className="text-primary font-semibold">Roadmap</p>

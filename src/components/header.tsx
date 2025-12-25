@@ -17,7 +17,9 @@ const navLinks = [
 ];
 
 const welcomeMessages = [
-  "Welcome to my Portfolio!",
+  "Developer Portfolio Initialized.",
+  "System Ready. Welcome.",
+  "Loading Next-Level Projects...",
 ];
 
 function DynamicWelcomeNote() {

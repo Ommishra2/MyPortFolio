@@ -5,7 +5,7 @@ import { Target } from "lucide-react";
 
 export function CurrentFocusSection() {
   return (
-    <section id="focus" className="py-16 md:py-24 bg-card/20">
+    <section id="focus" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block rounded-full bg-secondary text-secondary-foreground px-4 py-1 text-sm mb-4">
