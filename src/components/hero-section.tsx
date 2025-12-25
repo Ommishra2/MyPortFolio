@@ -12,12 +12,12 @@ export function HeroSection() {
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <Image
-        src="https://picsum.photos/seed/tech/1920/1080"
-        alt="Racing tech background"
+        src="https://picsum.photos/seed/space/1920/1080"
+        alt="A beautiful nebula in deep space"
         fill
         className="object-cover"
         priority
-        data-ai-hint="racing car"
+        data-ai-hint="nebula galaxy"
       />
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
