@@ -51,7 +51,7 @@ export function ProjectDialog({ project, children }: ProjectDialogProps) {
           </div>
           <div className="space-y-4">
             <DialogDescription className="text-base text-foreground/80">
-              {project.description}
+              {project.problem}
             </DialogDescription>
             <div>
               <h4 className="font-semibold mb-2">Technologies Used</h4>
