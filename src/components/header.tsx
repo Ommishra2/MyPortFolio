@@ -17,9 +17,9 @@ const navLinks = [
 ];
 
 const welcomeMessages = [
-  "Initializing Warp Drive...",
-  "Exploring New Frontiers...",
-  "Compiling Stardust...",
+  "Hello, World!",
+  "Welcome to My Portfolio",
+  "Full-Stack Developer"
 ];
 
 function DynamicWelcomeNote() {

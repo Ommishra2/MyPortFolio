@@ -4,16 +4,23 @@ import { portfolioData } from "@/lib/portfolio-data";
 import { Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { LiquidEffectAnimation } from "./ui/liquid-effect-animation";
+import { GridPattern } from "./grid-pattern";
 
 export function HeroSection() {
   const githubSocial = portfolioData.socials.find(s => s.name === 'GitHub');
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
-      <LiquidEffectAnimation />
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10" />
+      <div className="absolute inset-0 z-0">
+        <GridPattern
+            width={40}
+            height={40}
+            x={-1}
+            y={-1}
+            className="[mask-image:linear-gradient(to_bottom,white_10%,transparent_90%)]"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
         <div className="grid gap-6">
           <motion.div 
@@ -22,13 +29,13 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-white">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline">
               {portfolioData.name}
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 font-semibold">
+            <p className="text-xl md:text-2xl text-foreground/90 font-semibold">
               Full-Stack Developer (Next.js + FastAPI) | Building Data-Driven & AI-Ready Applications
             </p>
-            <p className="mx-auto max-w-[700px] text-white/80 md:text-lg">
+            <p className="mx-auto max-w-[700px] text-foreground/80 md:text-lg">
               Currently building <span className="font-bold text-primary">FinDash</span>, a financial analytics dashboard with real-world data workflows.
             </p>
           </motion.div>
@@ -42,7 +49,7 @@ export function HeroSection() {
               <Link href="#projects">View Projects</Link>
             </Button>
             {githubSocial && (
-              <Button asChild variant="outline" size="lg" className="bg-transparent text-white border-white/50 hover:bg-white/10 hover:text-white">
+              <Button asChild variant="outline" size="lg">
                 <Link href={githubSocial.url} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" /> GitHub
                 </Link>
