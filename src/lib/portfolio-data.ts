@@ -7,21 +7,21 @@ export const portfolioData = {
     "I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies. My current work focuses on: Frontend development with Next.js, React, Tailwind CSS, Backend APIs using FastAPI and PostgreSQL, Data-driven dashboards and analytics, and Preparing for applied Machine Learning and AI systems. I believe in learning by building real products, not just completing courses.",
   education: [
     {
-      degree: 'Master of Computer Applications (MCA)',
-      institution: 'KIET Group of Institutions, Delhi-NCR, Ghaziabad',
-      period: '2023 – 2025',
+      degree: 'MSc in Information Technology',
+      institution: 'BBAU, Lucknow',
+      period: '2023 – Present',
       details: [
-        'Specializing in advanced computer science topics, including algorithms, data structures, and software engineering.',
-        'CGPA: 9.2 (up to 2nd Semester)',
+        'Currently pursuing a Master of Science in Information Technology.',
+        'Focusing on advanced IT concepts and modern software development practices.',
       ],
     },
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Allahabad, Prayagraj, Uttar Pradesh',
+      degree: 'BSc in Computer Science',
+      institution: 'Gangadhar Meher University, Sambalpur',
       period: '2020 – 2023',
       details: [
-        'Built a strong foundation in core computer science principles.',
-        'Percentage: 72.4%',
+        'Graduated with a Bachelor of Science in Computer Science.',
+        'Developed a solid understanding of fundamental computer science principles.',
       ],
     },
   ],
