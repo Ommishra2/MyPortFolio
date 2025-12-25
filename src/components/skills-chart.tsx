@@ -16,7 +16,7 @@ const chartConfig = {
 
 export function SkillsChart() {
   return (
-    <Card className="p-4 shadow-lg">
+    <Card className="p-4 shadow-lg bg-card/50 backdrop-blur-sm">
       <ChartContainer config={chartConfig} className="min-h-[400px] w-full h-[500px]">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -29,20 +29,20 @@ export function SkillsChart() {
               bottom: 20,
             }}
           >
-            <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+            <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="hsl(var(--border) / 0.5)" />
             <XAxis type="number" hide domain={[0, 100]} />
             <YAxis
               dataKey="name"
               type="category"
               tickLine={false}
               axisLine={false}
-              tick={{ fill: 'hsl(var(--foreground))', fontSize: 12 }}
-              width={110}
+              tick={{ fill: 'hsl(var(--foreground))', fontSize: 14 }}
+              width={120}
             />
             <Tooltip
-              cursor={{ fill: 'hsl(var(--accent))', opacity: 0.2 }}
+              cursor={{ fill: 'hsl(var(--accent))', opacity: 0.1 }}
               content={<ChartTooltipContent 
-                formatter={(value, name) => [`${value}%`, name]}
+                formatter={(value) => `${value}%`}
                 indicator='dot'
               />}
             />

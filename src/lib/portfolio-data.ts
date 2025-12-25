@@ -45,25 +45,18 @@ export const portfolioData = {
       dataAiHint: 'recipe app'
     },
   ],
-  skills: {
-    "Frontend": [
-      "Next.js (App Router)",
-      "React",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "Backend": [
-      "FastAPI",
-      "REST APIs",
-      "PostgreSQL"
-    ],
-    "Data & Tools": [
-      "Python",
-      "Pandas (basic)",
-      "Git & GitHub",
-      "Docker (basic)"
-    ]
-  },
+  skills: [
+    { "name": "Next.js", "proficiency": 85, "category": "Frontend" },
+    { "name": "React", "proficiency": 90, "category": "Frontend" },
+    { "name": "TypeScript", "proficiency": 80, "category": "Frontend" },
+    { "name": "Tailwind CSS", "proficiency": 95, "category": "Frontend" },
+    { "name": "FastAPI", "proficiency": 75, "category": "Backend" },
+    { "name": "PostgreSQL", "proficiency": 70, "category": "Backend" },
+    { "name": "Python", "proficiency": 85, "category": "Data & Tools" },
+    { "name": "Pandas", "proficiency": 60, "category": "Data & Tools" },
+    { "name": "Git & GitHub", "proficiency": 80, "category": "Data & Tools" },
+    { "name": "Docker", "proficiency": 65, "category": "Data & Tools" }
+  ],
   contact: {
     email: 'ommishra458@gmail.com',
   },
