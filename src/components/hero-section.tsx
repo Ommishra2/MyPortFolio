@@ -4,13 +4,22 @@ import { portfolioData } from "@/lib/portfolio-data";
 import { Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function HeroSection() {
   const githubSocial = portfolioData.socials.find(s => s.name === 'GitHub');
 
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
-       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-background z-10" />
+      <Image
+        src="https://picsum.photos/seed/ocean/1920/1080"
+        alt="Ocean background"
+        fill
+        className="object-cover"
+        priority
+        data-ai-hint="ocean wave"
+      />
+      <div className="absolute inset-0 bg-background/70 backdrop-blur-sm z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
         <div className="grid gap-6">
           <motion.div 
@@ -19,14 +28,14 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-white">
               {portfolioData.name}
             </h1>
-            <p className="text-xl md:text-2xl text-foreground font-semibold">
+            <p className="text-xl md:text-2xl text-white/90 font-semibold">
               Full-Stack Developer (Next.js + FastAPI) | Building Data-Driven & AI-Ready Applications
             </p>
-            <p className="mx-auto max-w-[700px] text-foreground/80 md:text-lg">
-              Currently building <span className="font-bold text-accent">FinDash</span>, a financial analytics dashboard with real-world data workflows.
+            <p className="mx-auto max-w-[700px] text-white/80 md:text-lg">
+              Currently building <span className="font-bold text-primary">FinDash</span>, a financial analytics dashboard with real-world data workflows.
             </p>
           </motion.div>
           <motion.div 
@@ -35,11 +44,11 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <Button asChild size="lg" className="bg-primary/90 hover:bg-primary text-primary-foreground">
+            <Button asChild size="lg">
               <Link href="#projects">View Projects</Link>
             </Button>
             {githubSocial && (
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="bg-transparent text-white border-white/50 hover:bg-white/10 hover:text-white">
                 <Link href={githubSocial.url} target="_blank" rel="noopener noreferrer">
                   <Github className="mr-2 h-5 w-5" /> GitHub
                 </Link>

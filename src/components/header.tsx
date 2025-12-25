@@ -26,6 +26,9 @@ function DynamicWelcomeNote() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    // This effect should only run on the client
+    if (typeof window === 'undefined') return;
+
     const typingSpeed = isDeleting ? 75 : 150;
     const currentMessage = welcomeMessages[index];
 
@@ -81,7 +84,7 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-foreground/80 hover:text-foreground transition-colors">
+            <Link key={link.href} href={link.href} className="text-foreground/80 hover:text-primary transition-colors">
               {link.label}
             </Link>
           ))}
