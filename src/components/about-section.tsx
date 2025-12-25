@@ -8,48 +8,26 @@ export function AboutSection() {
   return (
     <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <p className="text-primary font-semibold">About Me</p>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Who I Am</h2>
-            </div>
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              {portfolioData.about}
+        <div className="space-y-6">
+          <div className="space-y-2 text-center">
+            <p className="text-primary font-semibold">About Me</p>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Who I Am</h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-4 text-center text-foreground/80 text-lg">
+            <p>
+              I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies.
+            </p>
+            <p>My current work focuses on:</p>
+            <ul className="list-disc list-inside inline-block text-left">
+              <li>Frontend development with Next.js, React, Tailwind CSS</li>
+              <li>Backend APIs using FastAPI and PostgreSQL</li>
+              <li>Data-driven dashboards and analytics</li>
+              <li>Preparing for applied Machine Learning and AI systems</li>
+            </ul>
+            <p className="font-semibold text-foreground">
+              I believe in learning by building real products, not just completing courses.
             </p>
           </div>
-          
-          <Card className="shadow-lg bg-card/50 backdrop-blur-sm">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <GraduationCap className="text-primary" />
-                <span>Education</span>
-              </CardTitle>
-              <CardDescription>
-                My academic background in technology.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                 <div className="flex items-start gap-4 text-foreground/80">
-                    <GraduationCap className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground">Master of Science in Information Technology</h3>
-                      <p className="text-sm">Babasaheb Bhimrao Ambedkar University, Lucknow</p>
-                      <p className="text-sm text-muted-foreground">Currently Pursuing</p>
-                    </div>
-                </div>
-                <div className="flex items-start gap-4 text-foreground/80">
-                    <GraduationCap className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground">Bachelor of Science in Computer Science</h3>
-                      <p className="text-sm">Gangadhar Meher University, Sambalpur</p>
-                      <p className="text-sm text-muted-foreground">Completed</p>
-                    </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>

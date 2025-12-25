@@ -4,34 +4,66 @@ export const portfolioData = {
   name: 'Om Prakash Mishra',
   title: 'Full Stack Developer & Data Analytics Specialist',
   about:
-    "I’m a passionate Full Stack Developer in training with a growing expertise in Data Analytics. As a student, I enjoy building dynamic, user-friendly web applications and discovering meaningful patterns in data. I’m always learning, experimenting, and refining my craft to deliver impactful solutions..",
+    "I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies. My current work focuses on: Frontend development with Next.js, React, Tailwind CSS, Backend APIs using FastAPI and PostgreSQL, Data-driven dashboards and analytics, and Preparing for applied Machine Learning and AI systems. I believe in learning by building real products, not just completing courses.",
   projects: [
     {
+      name: 'FinDash — Financial Analytics Dashboard',
+      role: 'Full-Stack Developer',
+      skills: ['Next.js', 'TypeScript', 'Tailwind', 'React Query'],
+      problem: 'A clean dashboard to visualize financial metrics and analytics.',
+      features: [
+        'Reusable UI components',
+        'Dashboard layout with sidebar & header',
+        'Client-side data fetching',
+        'Analytics-ready architecture',
+      ],
+      status: 'In Progress',
+      demoUrl: '#',
+      sourceUrl: '#',
+      images: ['/images/findash-1.png'],
+      dataAiHint: 'financial dashboard analytics'
+    },
+    {
       name: 'MealEase',
-      description:
-        ' a web app I built to help people plan their meals, find new recipes, and keep track of nutrition in an easy way.',
+      role: 'Full-Stack Developer',
+      skills: ['React', 'Node.js', 'Express', 'ES6+'],
+      problem: 'Helps people plan meals, find recipes, and track nutrition.',
+      features: [
+        'Recipe searching and filtering',
+        'Meal planning calendar',
+        'Nutritional information tracking'
+      ],
+      status: 'Completed',
+      demoUrl: 'https://meal-ease.vercel.app/',
+      sourceUrl: 'https://github.com/Ommishra2/MealEase',
       images: [
         '/images/mealease-1.png',
         '/images/mealease-2.png',
         '/images/mealease-3.png',
         '/images/mealease-4.png',
       ],
-      skills: ['React', 'Node.js', 'Express','ES6+'],
-      demoUrl: 'https://meal-ease.vercel.app/',
-      sourceUrl: 'https://github.com/Ommishra2/MealEase',
-      dataAiHint: 'analytics dashboard'
+      dataAiHint: 'recipe app'
     },
   ],
-  skills: [
-    { name: 'JavaScript', proficiency: 90 },
-    { name: 'React', proficiency: 85 },
-    { name: 'Node.js', proficiency: 80 },
-    { name: 'Python', proficiency: 95 },
-    { name: 'Pandas & NumPy', proficiency: 90 },
-    { name: 'SQL & NoSQL', proficiency: 88 },
-    { name: 'Flask', proficiency: 80 },
-    { name: 'REST APIs', proficiency: 90 },
-  ],
+  skills: {
+    "Frontend": [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "Backend": [
+      "FastAPI",
+      "REST APIs",
+      "PostgreSQL"
+    ],
+    "Data & Tools": [
+      "Python",
+      "Pandas (basic)",
+      "Git & GitHub",
+      "Docker (basic)"
+    ]
+  },
   contact: {
     email: 'ommishra458@gmail.com',
   },
@@ -61,4 +93,4 @@ export const portfolioData = {
 
 export type PortfolioData = typeof portfolioData;
 export type Project = typeof portfolioData.projects[0];
-export type Skill = typeof portfolioData.skills[0];
+export type Skills = typeof portfolioData.skills;

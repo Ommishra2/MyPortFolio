@@ -7,6 +7,7 @@ import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 import { GridPattern } from '@/components/grid-pattern';
 import { cn } from '@/lib/utils';
+import { CurrentFocusSection } from '@/components/current-focus-section';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
+          <CurrentFocusSection />
           <SkillsSection />
           <ContactSection />
         </main>
