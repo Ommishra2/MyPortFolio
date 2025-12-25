@@ -2,13 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/lib/portfolio-data";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail } from "lucide-react";
 import Link from "next/link";
+import type { Social } from "@/lib/portfolio-data";
 
 export function ContactSection() {
-  const github = portfolioData.socials.find(s => s.name === 'GitHub');
-  const linkedin = portfolioData.socials.find(s => s.name === 'LinkedIn');
-
   return (
     <section id="contact" className="py-16 md:py-24 bg-background/50">
       <div className="container mx-auto px-4 md:px-6 text-center">
@@ -26,20 +24,13 @@ export function ContactSection() {
             </a>
           </div>
           <div className="flex gap-4">
-            {github && (
-              <Button asChild variant="outline" size="icon">
-                <Link href={github.url} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
+            {portfolioData.socials.map((social: Social) => (
+              <Button asChild key={social.name} variant="outline" size="icon">
+                <Link href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
+                  <social.icon className="h-5 w-5" />
                 </Link>
               </Button>
-            )}
-            {linkedin && (
-              <Button asChild variant="outline" size="icon">
-                <Link href={linkedin.url} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </Link>
-              </Button>
-            )}
+            ))}
           </div>
         </div>
       </div>

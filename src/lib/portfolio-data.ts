@@ -1,4 +1,6 @@
 import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
+import { KaggleIcon } from '@/components/icons/kaggle-icon';
+import { DatacampIcon } from '@/components/icons/datacamp-icon';
 
 export const portfolioData = {
   name: 'Om Prakash Mishra',
@@ -91,9 +93,20 @@ export const portfolioData = {
       url: 'https://www.instagram.com/om.1205_?igsh=MWplN3lhYno5cWJ2MQ==',
       icon: Instagram,
     },
+    {
+      name: 'Kaggle',
+      url: 'https://www.kaggle.com/your-username', // Replace with your Kaggle URL
+      icon: KaggleIcon,
+    },
+    {
+      name: 'DataCamp',
+      url: 'https://www.datacamp.com/profile/your-username', // Replace with your DataCamp URL
+      icon: DatacampIcon,
+    },
   ],
 };
 
 export type PortfolioData = typeof portfolioData;
 export type Project = typeof portfolioData.projects[0];
 export type Skills = typeof portfolioData.skills;
+export type Social = typeof portfolioData.socials[0];
