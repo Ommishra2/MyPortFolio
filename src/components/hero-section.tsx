@@ -4,7 +4,7 @@ import { portfolioData } from "@/lib/portfolio-data";
 import { Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { GoldenRatioPattern } from "./golden-ratio-pattern";
+import { GridPattern } from "./grid-pattern";
 
 export function HeroSection() {
   const githubSocial = portfolioData.socials.find(s => s.name === 'GitHub');
@@ -12,7 +12,13 @@ export function HeroSection() {
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <GoldenRatioPattern className="[mask-image:linear-gradient(to_bottom,white_10%,transparent_90%)]" />
+        <GridPattern
+          width={30}
+          height={30}
+          x={-1}
+          y={-1}
+          className="[mask-image:linear-gradient(to_bottom,white_10%,transparent_90%)]"
+        />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
       <div className="container px-4 md:px-6 z-20 relative">
