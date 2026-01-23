@@ -15,17 +15,17 @@ export function AboutSection() {
           </div>
           <div className="max-w-3xl mx-auto space-y-4 text-center text-foreground/80 text-lg">
             <p>
-              I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies.
+              I am an AI-Driven Full-Stack Developer specializing in Next.js, FastAPI, and PostgreSQL, architecting intelligent web applications with a focus on MLOps, scalable data analytics, and the production-ready deployment of applied AI systems
             </p>
             <p>My current work focuses on:</p>
             <ul className="list-disc list-inside inline-block text-left">
-              <li>Frontend development with Next.js, React, Tailwind CSS</li>
-              <li>Backend APIs using FastAPI and PostgreSQL</li>
-              <li>Data-driven dashboards and analytics</li>
-              <li>Preparing for applied Machine Learning and AI systems</li>
+              <li>The Interface: Crafting high-performance, responsive frontends using Next.js, React, and Tailwind CSS.</li>
+              <li>The Engine: Architecting robust FastAPI backends and optimized PostgreSQL databases to handle complex data structures.</li>
+              <li>The Intelligence: Integrating Applied AI and predictive analytics, supported by MLOps principles to ensure models are scalable, observable, and production-ready.</li>
+              <li>The Strategy: Bridging the gap between raw data and user-facing insights through custom analytics dashboards and automated data pipelines.</li>
             </ul>
             <p className="font-semibold text-foreground">
-              I believe in learning by building real products, not just completing courses.
+              I believe that the best way to master AI and web technologies is by building real-world products. I am focused on delivering clean, maintainable code that transforms sophisticated AI models into intuitive, value-driven user experiences.
             </p>
           </div>
         </div>
