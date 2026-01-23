@@ -2,9 +2,9 @@ import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 export const portfolioData = {
   name: 'Om Prakash Mishra',
-  title: 'Full Stack Developer & Data Analytics Specialist',
+  title: 'AI Driven Full Stack Developer & MLOps Specialist',
   about:
-    "I am a Full-Stack Developer in training with a strong focus on building clean, scalable web applications using modern technologies. My current work focuses on: Frontend development with Next.js, React, Tailwind CSS, Backend APIs using FastAPI and PostgreSQL, Data-driven dashboards and analytics, and Preparing for applied Machine Learning and AI systems. I believe in learning by building real products, not just completing courses.",
+    "I am an AI-Driven Full-Stack Developer specializing in Next.js, FastAPI, and PostgreSQL, architecting intelligent web applications with a focus on MLOps, scalable data analytics, and the production-ready deployment of applied AI systems.",
   education: [
     {
       degree: 'BSc in Computer Science',
@@ -84,8 +84,8 @@ export const portfolioData = {
     { name: 'Git & GitHub', proficiency: 85, category: 'Tools & Workflow' },
     { name: 'pnpm', proficiency: 70, category: 'Tools & Workflow' },
     { name: 'Figma (AI-assisted UI design)', proficiency: 75, category: 'Tools & Workflow' },
-    { name: 'DevOps', proficiency: 65, category: 'Tools & Workflow' },
-    { name: 'DevSecOps', proficiency: 60, category: 'Tools & Workflow' },
+    { name: 'DevOps & DevSecOps', proficiency: 75.5, category: 'Tools & Workflow' },
+    { name: 'MLOps', proficiency: 85, category: 'Tools & Workflow' },
   ],
   contact: {
     email: 'ommishra458@gmail.com',
