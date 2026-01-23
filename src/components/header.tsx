@@ -20,7 +20,7 @@ const navLinks = [
 const welcomeMessages = [
   "Hello, World!",
   "Welcome to My Portfolio",
-  "Full-Stack Developer"
+  "Full-Stack Developer & MLOps Engineer"
 ];
 
 function DynamicWelcomeNote() {
