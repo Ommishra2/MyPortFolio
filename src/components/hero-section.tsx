@@ -33,7 +33,7 @@ export function HeroSection() {
               {portfolioData.name}
             </h1>
             <p className="text-xl md:text-2xl text-foreground/90 font-semibold">
-              Full-Stack Developer (Next.js + FastAPI) | Building Data-Driven & AI-Ready Applications
+             AI-Driven Full Stack Developer | Building Production-Grade ML Systems & Analytics Dashboards | Next.js • FastAPI • MLOps
             </p>
             <p className="mx-auto max-w-[700px] text-foreground/80 md:text-lg">
               Currently building <span className="font-bold text-primary">FinDash</span>, a financial analytics dashboard with real-world data workflows.
