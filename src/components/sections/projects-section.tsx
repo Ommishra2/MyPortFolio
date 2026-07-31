@@ -1,5 +1,5 @@
 import { portfolioData } from "@/lib/portfolio-data";
-import { ProjectCard } from "./project-card";
+import { ProjectCard } from "../shared/project-card";
 
 export function ProjectsSection() {
   return (

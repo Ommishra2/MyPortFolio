@@ -2,35 +2,65 @@ import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 
 export const portfolioData = {
   name: 'Om Prakash Mishra',
-  title: 'Full Stack Developer & Data Analytics Specialist',
+  title: 'Backend Engineer | MLOps | Data Science',
   about:
-    "I’m a passionate Full Stack Developer in training with a growing expertise in Data Analytics. As a student, I enjoy building dynamic, user-friendly web applications and discovering meaningful patterns in data. I’m always learning, experimenting, and refining my craft to deliver impactful solutions..",
+    "Motivated Data Scientist and Backend Engineer pursuing an MSc in Information Technology at BBAU. Experienced in building and deploying ML/AI models for anomaly detection, advanced classification, and NLP pipelines using Python, Scikit-learn, TensorFlow, and PyTorch. Hands-on expertise in MLOps, cloud-native systems architecture, and production-ready AI application deployment on Google Cloud Platform (GCP) and Vertex AI.",
   projects: [
     {
       name: 'MealEase',
       description:
-        ' a web app I built to help people plan their meals, find new recipes, and keep track of nutrition in an easy way.',
+        'A full-stack web application with recipe search, meal planning calendar, and nutritional analytics. Integrated REST APIs and client-side data-fetching patterns.',
       images: [
         '/images/mealease-1.png',
         '/images/mealease-2.png',
         '/images/mealease-3.png',
         '/images/mealease-4.png',
       ],
-      skills: ['React', 'Node.js', 'Express','ES6+'],
+      skills: ['React', 'Node.js', 'Express', 'TypeScript'],
       demoUrl: 'https://meal-ease.vercel.app/',
       sourceUrl: 'https://github.com/Ommishra2/MealEase',
       dataAiHint: 'analytics dashboard'
     },
+    {
+      name: 'CortexOps',
+      description:
+        'Vendor-neutral Operational Decision Support Platform. Transforms operational evidence into structured, AI-generated Situation Reports that reduce Time to Understanding (TTU) during production incidents.',
+      images: [],
+      skills: ['Go', 'React', 'Python', 'PostgreSQL', 'Docker', 'OpenTelemetry', 'gRPC'],
+      demoUrl: '',
+      sourceUrl: 'https://github.com/Ommishra2/CortexOps',
+      dataAiHint: 'operational decision support platform'
+    },
+    {
+      name: 'RAG Application - MongoDB Atlas',
+      description:
+        'Architected an end-to-end Retrieval-Augmented Generation pipeline using MongoDB Atlas Vector Search, achieving ~60% improvement in semantic query relevance.',
+      images: [],
+      skills: ['Python', 'MongoDB Atlas', 'Transformer Models', 'NLP', 'GCP Vertex AI'],
+      demoUrl: '',
+      sourceUrl: '',
+      dataAiHint: 'AI integration'
+    },
+    {
+      name: 'CareerCompass',
+      description:
+        'A tool to navigate and guide career paths.',
+      images: [],
+      skills: ['TypeScript', 'React'],
+      demoUrl: '',
+      sourceUrl: 'https://github.com/Ommishra2/CareerCompass',
+      dataAiHint: 'career guidance'
+    }
   ],
   skills: [
-    { name: 'JavaScript', proficiency: 90 },
-    { name: 'React', proficiency: 85 },
-    { name: 'Node.js', proficiency: 80 },
-    { name: 'Python', proficiency: 95 },
-    { name: 'Pandas & NumPy', proficiency: 90 },
-    { name: 'SQL & NoSQL', proficiency: 88 },
-    { name: 'Flask', proficiency: 80 },
-    { name: 'REST APIs', proficiency: 90 },
+    { name: 'Python & FastAPI', proficiency: 95 },
+    { name: 'Node.js & TypeScript', proficiency: 85 },
+    { name: 'React & Tailwind CSS', proficiency: 90 },
+    { name: 'Machine Learning (PyTorch, Scikit-learn)', proficiency: 88 },
+    { name: 'MLOps (GCP, Vertex AI, Docker)', proficiency: 85 },
+    { name: 'Databases (PostgreSQL, MongoDB Atlas)', proficiency: 90 },
+    { name: 'Cloud & DevOps (Kubernetes, CI/CD)', proficiency: 80 },
+    { name: 'NLP & RAG', proficiency: 85 },
   ],
   contact: {
     email: 'ommishra458@gmail.com',
