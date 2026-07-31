@@ -65,6 +65,18 @@ export const portfolioData = {
   contact: {
     email: 'ommishra458@gmail.com',
   },
+  education: [
+    {
+      degree: 'MSc Information Technology',
+      institution: 'Babasaheb Bhimrao Ambedkar University (BBAU)',
+      period: '2025 – 2027',
+    },
+    {
+      degree: 'BSc Computer Science',
+      institution: 'Gangadhar Meher University (GMU)',
+      period: '2021 – 2024',
+    },
+  ],
   socials: [
     {
       name: 'GitHub',

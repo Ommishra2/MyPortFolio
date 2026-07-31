@@ -20,14 +20,17 @@ export function AboutMeCode() {
         <div className="p-6 md:p-8 font-mono text-sm md:text-base leading-relaxed overflow-x-auto">
           <div className="flex">
             <div className="text-slate-600 select-none text-right pr-4 border-r border-slate-800 mr-4 flex flex-col hidden md:flex">
-              {Array.from({ length: 14 }).map((_, i) => (
+              {Array.from({ length: 16 }).map((_, i) => (
                 <span key={i}>{i + 1}</span>
               ))}
             </div>
             <div className="text-slate-300 whitespace-pre">
               <span className="text-[#ff6b00]">class</span> <span className="text-[#00f2ff]">Developer</span> {'{\n'}
               {'  '}<span className="text-[#ffb693]">name</span>: <span className="text-[#00dbe7]">string</span> = <span className="text-green-400">"{portfolioData.name}"</span>;{'\n'}
-              {'  '}<span className="text-[#ffb693]">education</span>: <span className="text-[#00dbe7]">string</span> = <span className="text-green-400">"MSc Information Technology @ BBAU (2025–2027)"</span>;{'\n'}
+              {'  '}<span className="text-[#ffb693]">education</span>: <span className="text-[#00dbe7]">string[]</span> = [{'\n'}
+              {'    '}<span className="text-green-400">"MSc Information Technology @ BBAU (2025–2027)"</span>,{'\n'}
+              {'    '}<span className="text-green-400">"BSc Computer Science @ Gangadhar Meher University (2021–2024)"</span>{'\n'}
+              {'  '}];{'\n'}
               {'\n'}
               {'  '}<span className="text-[#ffb693]">focusAreas</span>: <span className="text-[#00dbe7]">string</span>[] = [{'\n'}
               {'    '}<span className="text-green-400">"Backend Engineering (FastAPI, Node.js, PostgreSQL)"</span>,{'\n'}

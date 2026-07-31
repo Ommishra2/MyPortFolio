@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code2, BookOpen, Lightbulb, Award } from 'lucide-react';
+import { BookOpen, Lightbulb, Award } from 'lucide-react';
+import { portfolioData } from '@/lib/portfolio-data';
 
 export function AdditionalSections() {
   const exploring = [
@@ -21,18 +22,23 @@ export function AdditionalSections() {
     <section className="py-24 bg-slate-950 px-4 md:px-8 relative z-10">
       <div className="max-w-6xl mx-auto space-y-16">
         
-        {/* Education & Interests remain below */}        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        {/* Education & Interests remain below */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Education & Certifications */}
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <BookOpen className="w-8 h-8 text-[#00f2ff]" />
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Education</h2>
             </div>
-            <Card className="bg-[#08141e]/40 backdrop-blur-md border border-white/10 shadow-xl p-6">
-              <h3 className="text-xl font-bold text-white mb-2">MSc Information Technology</h3>
-              <p className="text-[#00f2ff] font-mono text-sm mb-4">Babasaheb Bhimrao Ambedkar University (BBAU)</p>
-              <Badge variant="outline" className="text-slate-300 border-slate-700">2025 – 2027</Badge>
-            </Card>
+            <div className="space-y-4">
+              {portfolioData.education.map((edu, i) => (
+                <Card key={i} className="bg-[#08141e]/40 backdrop-blur-md border border-white/10 shadow-xl p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">{edu.degree}</h3>
+                  <p className="text-[#00f2ff] font-mono text-sm mb-4">{edu.institution}</p>
+                  <Badge variant="outline" className="text-slate-300 border-slate-700">{edu.period}</Badge>
+                </Card>
+              ))}
+            </div>
 
             <div className="flex items-center gap-4 pt-4">
               <Award className="w-8 h-8 text-[#00f2ff]" />
