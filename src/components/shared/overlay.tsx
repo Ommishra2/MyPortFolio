@@ -68,7 +68,7 @@ export function Overlay() {
         {/* Creative Scroll Down Prompt */}
         <motion.div
           style={{ opacity: scrollIndicatorOpacity, y: scrollIndicatorY }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-auto cursor-pointer group"
+          className="absolute bottom-12 md:bottom-16 left-1/2 -translate-x-1/2 z-20 pointer-events-auto cursor-pointer group"
           onClick={() => {
             window.scrollTo({
               top: window.innerHeight * 0.8,
@@ -76,19 +76,18 @@ export function Overlay() {
             });
           }}
         >
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/60 backdrop-blur-md border border-cyan-500/30 text-xs md:text-sm font-medium text-slate-300 shadow-[0_0_20px_rgba(56,189,248,0.15)] group-hover:border-cyan-400/60 group-hover:text-cyan-300 group-hover:shadow-[0_0_25px_rgba(56,189,248,0.3)] transition-all duration-300">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+          <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-slate-900/75 backdrop-blur-lg border border-cyan-500/30 text-xs md:text-sm font-medium text-slate-300 shadow-[0_0_20px_rgba(56,189,248,0.15)] group-hover:border-cyan-400/60 group-hover:text-cyan-200 group-hover:shadow-[0_0_25px_rgba(56,189,248,0.3)] transition-all duration-300">
+            <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
             <span className="tracking-wide bg-gradient-to-r from-cyan-200 via-white to-purple-200 bg-clip-text text-transparent font-semibold">
               Scroll down to dive in
             </span>
+            <motion.div
+              animate={{ y: [0, 4, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <ChevronDown className="w-4 h-4 text-cyan-400 group-hover:text-cyan-300" />
+            </motion.div>
           </div>
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-            className="p-1.5 rounded-full bg-slate-900/40 border border-white/10 text-cyan-400 group-hover:border-cyan-500/40 group-hover:text-cyan-300 transition-colors"
-          >
-            <ChevronDown className="w-4 h-4" />
-          </motion.div>
         </motion.div>
 
       </div>
