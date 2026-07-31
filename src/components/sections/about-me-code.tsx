@@ -39,9 +39,8 @@ export function AboutMeCode() {
               {'    '}<span className="text-[#ff6b00]">return</span> {'{\n'}
               {'      '}role: <span className="text-green-400">"{portfolioData.title}"</span>,{'\n'}
               {'      '}stack: <span className="text-green-400">"Python, Go, React, GCP"</span>{'\n'}
-              {'    '};{'\n'}
-              {'  '}}{'\n'}
-              {'}'}
+              {'  }\n'}
+              {'}\n'}
             </div>
           </div>
         </div>
